@@ -66,6 +66,16 @@ All colors MUST be HSL.
     /* Animations */
     --transition-cyber: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
     --glitch-duration: 2s;
+    
+    /* Advanced Cyber Effects */
+    --neon-glow: 0 0 5px currentColor, 0 0 10px currentColor, 0 0 15px currentColor, 0 0 20px hsl(var(--cyber-green));
+    --hologram-shimmer: linear-gradient(45deg, transparent 30%, hsl(var(--cyber-green) / 0.1) 50%, transparent 70%);
+    --matrix-code: "01010101 01000001 01001001";
+    
+    /* 3D Transforms */
+    --perspective: 1000px;
+    --rotate-x: 0deg;
+    --rotate-y: 0deg;
   }
 }
 

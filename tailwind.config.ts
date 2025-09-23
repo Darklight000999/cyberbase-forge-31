@@ -75,6 +75,11 @@ export default {
         'terminal-cursor': 'cursor 1s infinite',
         'matrix-rain': 'matrix-fall 3s infinite linear',
         'cyber-pulse': 'cyber-pulse 2s infinite',
+        'hologram-shimmer': 'hologram 2s infinite linear',
+        'data-stream': 'data-stream 4s infinite linear',
+        'neon-flicker': 'neon-flicker 0.1s infinite',
+        'scan-line': 'scan-line 2s infinite linear',
+        'float-3d': 'float-3d 6s ease-in-out infinite',
       },
       borderRadius: {
         lg: "var(--radius)",
@@ -116,6 +121,31 @@ export default {
             boxShadow: "0 0 30px hsl(var(--cyber-green) / 0.8), 0 0 40px hsl(var(--cyber-green) / 0.4)",
             borderColor: "hsl(var(--cyber-green))"
           },
+        },
+        "hologram": {
+          "0%": { transform: "translateX(-100%)" },
+          "100%": { transform: "translateX(100%)" },
+        },
+        "data-stream": {
+          "0%": { transform: "translateY(100vh)", opacity: "0" },
+          "10%": { opacity: "1" },
+          "90%": { opacity: "1" },
+          "100%": { transform: "translateY(-100vh)", opacity: "0" },
+        },
+        "neon-flicker": {
+          "0%, 100%": { opacity: "1" },
+          "50%": { opacity: "0.8" },
+          "51%": { opacity: "1" },
+          "52%": { opacity: "0.9" },
+          "53%": { opacity: "1" },
+        },
+        "scan-line": {
+          "0%": { transform: "translateX(-100%)" },
+          "100%": { transform: "translateX(100vw)" },
+        },
+        "float-3d": {
+          "0%, 100%": { transform: "translateY(0px) rotateX(0deg)" },
+          "50%": { transform: "translateY(-20px) rotateX(10deg)" },
         },
       },
     },
