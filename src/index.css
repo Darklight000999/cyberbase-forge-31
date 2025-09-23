@@ -1,0 +1,80 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    /* CyberBase Dark Theme - Black × Green × Red */
+    --background: 0 0% 2%;
+    --foreground: 120 100% 85%;
+
+    --card: 0 0% 5%;
+    --card-foreground: 120 100% 85%;
+
+    --popover: 0 0% 3%;
+    --popover-foreground: 120 100% 85%;
+
+    /* Matrix Green Primary */
+    --primary: 120 100% 50%;
+    --primary-foreground: 0 0% 2%;
+    --primary-glow: 120 100% 60%;
+
+    /* Dark Gray Secondary */
+    --secondary: 0 0% 12%;
+    --secondary-foreground: 120 100% 85%;
+
+    /* Muted Terminal Colors */
+    --muted: 0 0% 8%;
+    --muted-foreground: 120 30% 65%;
+
+    /* Neon Green Accent */
+    --accent: 120 100% 45%;
+    --accent-foreground: 0 0% 2%;
+
+    /* Red Alert/Danger */
+    --destructive: 0 100% 60%;
+    --destructive-foreground: 0 0% 98%;
+
+    /* Terminal Borders */
+    --border: 120 20% 20%;
+    --input: 0 0% 8%;
+    --ring: 120 100% 50%;
+
+    --radius: 0.375rem;
+
+    /* Custom CyberBase Colors */
+    --cyber-black: 0 0% 2%;
+    --cyber-gray: 0 0% 8%;
+    --cyber-green: 120 100% 50%;
+    --cyber-red: 0 100% 60%;
+    --cyber-terminal: 120 30% 65%;
+
+    /* Gradients */
+    --gradient-matrix: linear-gradient(135deg, hsl(var(--cyber-black)), hsl(var(--cyber-gray)));
+    --gradient-green: linear-gradient(135deg, hsl(var(--cyber-green)), hsl(var(--primary-glow)));
+    --gradient-danger: linear-gradient(135deg, hsl(var(--cyber-red)), hsl(0 100% 45%));
+
+    /* Glows */
+    --glow-green: 0 0 20px hsl(var(--cyber-green) / 0.5);
+    --glow-red: 0 0 20px hsl(var(--cyber-red) / 0.5);
+    --shadow-cyber: 0 4px 20px hsl(var(--cyber-green) / 0.1);
+
+    /* Animations */
+    --transition-cyber: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --glitch-duration: 2s;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
